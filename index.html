@@ -2,33 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Unimapper</title>
+    <title>Unimapper - Fatec</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @font-face {
+            font-family: 'Poppin';
+            src: url('/fonts/Poppins-Bold.ttf') format('opentype');
+        }
+    </style>
+    <style>
+        /* CSS responsivo */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="content">
-      <div class="slide">
-        <div class="background-gradient"></div>
-        <div class="text">
-          <h1>Bem-vindo ao Unimapper</h1>
-          <p>Seu aplicativo universitário de localização</p>
-        </div>
-        <div class="arrow-icon" onclick="changeSlide(2)">&#10140;</div>
-      </div>
-      <div class="slide">
-        <div class="background-gradient"></div>
-        <div class="text">
-          <h1>Está cansado de ficar perdido dentro da FATEC Campinas?</h1>
-          <p>Esse aplicativo foi feito para você!</p>
-          <p>Primeiro GPS universitário da FATEC</p>
-        </div>
-        <div class="arrow-icon" onclick="changeSlide(3)">&#10140;</div>
-      </div>
-    </div>
-  </div>
-
-  <script src="/script.js"></script>
+    <img src="/logo.unimapper.png" alt="logo Unimapper" class="logo.unimapper"></div>
+    <div class="loading"></div>
+  
+    <script src="script.js"></script>
 </body>
 </html>
